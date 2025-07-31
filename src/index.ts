@@ -1,30 +1,16 @@
 import express from "express";
-import prisma from "./prisma";
+import { PrismaClient } from "@prisma/client";
+import userRoutes from "./routes/user";
 import dotenv from "dotenv";
 
 dotenv.config();
-
 const app = express();
+const prisma = new PrismaClient();
+const port = process.env.PORT || 3000;
+
 app.use(express.json());
-const port = 3000;
-
-app.get("/", async (req, res) => {
-  const users = await prisma.user.findMany();
-  res.json(users);
-});
-
-app.post("/user", async (req, res) => {
-  const { name, email } = req.body;
-  try {
-    const user = await prisma.user.create({
-      data: { name, email },
-    });
-    res.json(user);
-  } catch (err) {
-    res.status(400).json({ error: "Could not create user", details: err });
-  }
-});
+app.use("/users", userRoutes);
 
 app.listen(port, () => {
-  console.log(`Server is running on http://localhost:${port}`);
+  console.log(`Server running on http://localhost:${port}`);
 });

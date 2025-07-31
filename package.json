@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "ts-node-dev --respawn src/index.ts",
-    "build": "prisma generate && tsc",
+    "dev": "ts-node-dev src/index.ts",
+    "build": "tsc",
     "start": "node dist/index.js",
-    "postinstall": "prisma generate"
+    "prisma": "prisma"
   },
   "keywords": [],
   "author": "",
@@ -16,7 +16,8 @@
     "@prisma/client": "^6.13.0",
     "dotenv": "^17.2.1",
     "express": "^5.1.0",
-    "pg": "^8.16.3"
+    "pg": "^8.16.3",
+    "prisma": "^6.13.0"
   },
   "devDependencies": {
     "@types/express": "^5.0.3",
