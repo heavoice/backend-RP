@@ -12,3 +12,23 @@ model User {
   name  String
   email String  @unique
 }
+
+model House {
+  id               Int      @id @default(autoincrement())
+  location         String
+  landSize         Float
+  bedrooms         Int
+  price            Float
+  bathrooms        Int
+  floors           Int
+  certificate      String
+  propertyType     String
+  yearBuilt        Int
+  electricity      Int
+  hasGarage        Boolean
+  roadAccess       String
+  publicFacilities String
+  distanceToCity   Float
+  createdAt        DateTime @default(now())
+}
+
