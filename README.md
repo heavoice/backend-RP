@@ -4,21 +4,17 @@ API backend untuk platform prediksi dan listing properti, dibangun dengan stack 
 🚀 Tech Stack
 Express.js – Web framework ringan dan fleksibel untuk Node.js
 
-TypeScript – Bahasa pemrograman JavaScript yang diketik statis untuk kode yang lebih aman dan terstruktur
+TypeScript – Bahasa JavaScript bertipe statis untuk kode yang lebih aman dan maintainable
 
-Prisma ORM – ORM modern untuk query yang efisien dan aman terhadap tipe
+Prisma ORM – ORM modern untuk query database yang efisien dan aman
 
-PostgreSQL – Database relasional open-source yang tangguh
+PostgreSQL – Database relasional open-source yang andal
 
-Railway – Platform cloud untuk deploy dan manajemen database yang cepat dan mudah
+Railway – Platform cloud untuk deployment dan manajemen database secara instan
 
 ✨ Fitur Utama
-RESTful API untuk manajemen data properti
+RESTful API untuk listing dan detail properti
 
 Prisma schema & migration management
 
-Middleware untuk validasi dan error handling
-
-Konfigurasi environment berbasis .env
-
-Siap deploy ke Railway atau platform lain (Render, Vercel, dll)
+Siap deploy dengan konfigurasi .env dan dukungan Railway
