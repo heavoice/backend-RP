@@ -1,7 +1,7 @@
-🏠 Backend Rumah Prediksi
+#🏠 Backend Rumah Prediksi
 API backend untuk platform prediksi dan listing properti, dibangun dengan stack modern dan siap untuk skala produksi.
 
-🚀 Tech Stack
+#🚀 Tech Stack
 Express.js – Web framework ringan dan fleksibel untuk Node.js
 
 TypeScript – Bahasa JavaScript bertipe statis untuk kode yang lebih aman dan maintainable
@@ -12,7 +12,7 @@ PostgreSQL – Database relasional open-source yang andal
 
 Railway – Platform cloud untuk deployment dan manajemen database secara instan
 
-✨ Fitur Utama
+#✨ Fitur Utama
 RESTful API untuk listing dan detail properti
 
 Prisma schema & migration management
